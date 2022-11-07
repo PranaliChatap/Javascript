@@ -1,0 +1,81 @@
+#card-main{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    background-color: rgb(215, 239, 247);
+}
+
+.cardbox{
+    background-color: white;
+    margin: 22px;
+    padding: 40px 0 6rem 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 1px rgb(160, 160, 160);
+    
+}
+
+h2{
+    color: blue;
+    font-size: 30px;
+    text-transform: capitalize;
+    
+}
+
+.check1{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:580px) {
+    #card-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    background-color: rgb(61, 153, 184);
+    }
+
+    .cardbox{
+        background-color: hsl(0, 0%, 3%);
+        margin: 16px;
+        color: white;
+        padding: 20px 0 3rem 30px;
+        /* border-radius: 10px; */
+        /* box-shadow: 1px 1px 8px 1px rgb(160, 160, 160); */
+        
+    }
+
+
+}
+
+
+
+/* p::first-line{
+    color: aqua;
+    text-transform: uppercase;
+}
+
+p::first-letter{
+    color: blueviolet;
+    font-size: 40px;
+}
+
+h1::before{
+    content: "Hello Everyone";
+    color: red;
+
+}
+
+h1::after{
+    content: "Nice to meet you";
+    color: blue;
+}
+
+::marker{
+    color: royalblue;
+}
+
+
+::selection{
+    color:white;
+    background-color: black;
+} */
