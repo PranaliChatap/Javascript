@@ -82,7 +82,7 @@
 
 // Logical Operators 
 // let a=10, b=20;
-// && ----------- >  both expression true hai to true otherwise false
+// (logical and) && -----------  both expression true hai to true otherwise false
     // if(true && true)----------> true
     // if(true && false)----------> false
     // if(false && true)----------> false
@@ -93,7 +93,7 @@
     // console.log(a == b && a != b ) //false
     // console.log(a < b && a != b ) //true
 
-// || ----------- >  both expression false hai to false otherwise true
+// (logical or) || -----------   both expression false hai to false otherwise true
     // if(true || true)----------> true
     // if(true || false)----------> true
     // if(false || true)----------> true
@@ -105,7 +105,7 @@
     // console.log(a > b || a == b ) //false
 
 
-// !  ----------- >  inverse karega true- false
+// (logical not) !  -----------   inverse karega true- false
     // if(true)----------> false
     // if(false)----------> true
 
@@ -115,7 +115,7 @@
     // let a=10, b=20;
 
 
-// Conditional/Relational Operators 
+// Conditional/Relational Operators --------------
 
 // console.log(a<b);   //true
 // console.log(a>b);   //false
@@ -125,7 +125,7 @@
 // console.log(a<=b);   //true
 // console.log(a>=b);   //false
 
-// Ternary Operator 
+// Ternary Operator  ------------
 // let a=10, b="10";    //number
 // ternary operator    ------> statement ? true : false 
 // a<b || a>=b ? console.log("ha greater hai") : console.log("ha less hai") 
@@ -173,6 +173,7 @@
 // console.log(parseFloat(b))
 
 
+
 //ARRAY METHODS
 
 //Type check
@@ -180,75 +181,75 @@
 // console.log(fruits)
 // console.log(Array.isArray(fruits))  
 
-//Indexing
+//Indexing  -----(gives index value)
 // console.log(fruits[0]);
 // console.log(fruits[1]);
 
-//slice
+//slice  ----(gives part of array)
 // console.log(fruits.slice(-1));
 
-//unshift
-// fruits.unshift("custoredApple");
+//unshift  ----(add new element in begining)
+// fruits.unshift("custaredApple");
 // console.log(fruits)
 
-//shift
+//shift  -----(remove element from begining)
 // shifted_element = fruits.shift();
 // console.log(shifted_element);
 
-//Push
+//Push   -----(add element in end of array)
 // fruits.push("strawberry");
 // console.log(fruits)
 
-//Pop
+//Pop   -----(remove element from end of array)
 // popped_element= fruits.pop();
 // console.log(popped_element);
 // console.log(fruits)
 
-//toString
+//toString     -----(convert number to string)
 // let arr = 1;
 // let res = arr.toString();
 // console.log(res);
 // console.log(typeof res);
 
-//Splice
+//Splice        ------(add or remove element at specified index )
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // fruits.splice( 0, 1, 'kiwi');  //Add element
 // fruits.splice(1,1);            //remove element
 // console.log(fruits);
 
-//concat
+//concat   ------(join two arrays)
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // let vege = ['cucumber', 'bringle'];
 // let all = fruits.concat(vege);
 // console.log(all);
 
-//slice
+//slice   ------ ( gives part of array by specifiying indexes)
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // let all = fruits.slice(1, 4);
 // console.log(all);
 
-//sort
+//sort   ------(sort element in ascending order)
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // console.log(fruits.sort());
 
-//reverse
+//reverse ------(reverse array elements)
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // console.log(fruits.reverse());
 
-//max and min
+//max and min -------
 // let arr = [1,2,3,4,5,6]
 // let max1 = Math.max(...arr);
 // let min1 = Math.min(...arr);
 // console.log(max1);
 // console.log(min1);
 
-//length property
+//length property  ----------------
 // let a = [1,2,3,4,5];
 // let b = a.length;
 // console.log(b);
 
 
-//iterate loop using length
+//iterate loop using length -------------
 
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // for(let i=0 ; i< fruits.length ;i++){
@@ -259,24 +260,95 @@
 //     }
 // }
 
-//Check array or not
-// let fruits = ["mango","apple","grapes","watermelon","lemon"];
-// let arr = Array.isArray(fruits);
-// console.log(arr);
+
+//CLONING OF ARRAY
+
+//First way ----------
+// let arr1 = [1,2,3,4,5]; 
+// let arr2 = arr1.slice(0);     //slice which will copy all form mention index
+// console.log(arr2);
+
+//We can concat elements  ----------
+// let arr3 = arr1.slice(0).concat("item2", ["arr1", "arr2"]); 
+// console.log(arr3);
 
 
-//Spread operator
+//Second way -----------
+// let arr4 = [].concat(arr1);
+// let arr5 = ["item"].concat("item1");
+// let arr6 = arr5.concat("item2", "item3")
+// console.log(arr6);
+
+
+//Third Way ------------
+//Spread operator ---------------
 //It creates a copy of variables
 
-let arr1 = [1,2,3,4,5];
+// let arr1 = [1,2,3,4,5];
 // let arr2 = [6 , ...arr1];
 // console.log(arr2);
 
 // arr2.push(7);
 // console.log(arr2);
 
-let arr3 = Object.assign(arr1);
-console.log(arr3); 
+
+//Fourth Way ------------
+// let arr3 = Object.assign(arr1);
+// console.log(arr3); 
+
+
+
+//Rest operator -----------
+//It allows us to pass an indefinite number of parameters 
+//to a function and access them in an array using ...(three)dots
+
+// function sum(...para){
+//     let total = 0;
+//     for(let i=0 ; i<para.length ; i++){
+//         total += para[i];
+//     }
+//     console.log(total)
+// }
+
+// sum(1, 2,3,4,5,6,7,8);
+
+
+//FUNCTIONS -----------------
+//Functions are block of statement
+// which can be called anywhere in entire program
+//Reuse of code and can be called multiple times in program
+//keyword 'function' foll0wed with function name and paranthesis
+
+//Types of Functions----------
+
+//1. Regular function (Named function)-----------
+function printName(){
+    console.log("Pranali Chatap");
+}
+printName();
+
+
+//2. Expressive function (Anonymous function)-----------
+let name = function(){
+    console.log("Pranali");
+}
+name();
+
+//3. Arrow Function (Added ES6 feature)-----------
+const fullname = () =>{
+    console.log("Pranali Prabhakar Chatap");
+}
+fullname();
+
+//4. Immediatetly Invoked Function -------------
+// function that runs as soon as it is defined
+
+(function(){
+    console.log("Immediatetly invoked function")
+}());
+
+
+
 
 
 
