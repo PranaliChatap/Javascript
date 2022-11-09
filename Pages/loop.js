@@ -1,5 +1,5 @@
-const element = document.querySelectorAll('p');
-console.log(element);
+// const element = document.querySelectorAll('p');
+// console.log(element);
 
 //Using simple for loop
 // for(let ele = 0; ele < element.length ; ele++){
@@ -26,11 +26,14 @@ console.log(element);
 //      }
 // }
 
-//Using for in
-// for(let ele in element){
-//     if(element[ele].innerText="pannu"){            //includes give typerror
-//         element[ele].innerText = "hello Everyone";
-//         console.log("Yes using for in", element[ele])
-//      }
-// }
+const element = document.querySelectorAll('p');
+console.log(element);
+
+// Using for in
+for(let ele in element){
+    if(element[ele].innerText="pannu"){            //includes give typerror
+        element[ele].innerText = "hello Everyone";
+        console.log("Yes using for in", element[ele])
+     }
+}
 

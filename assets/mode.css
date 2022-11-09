@@ -1,0 +1,132 @@
+.container{
+    background-color: white;
+    align-items: center;
+    color: black;
+   text-align: center;
+}
+
+.container-font {
+    font-size: larger;
+}
+
+.heading{
+    font-size: 35px;
+}
+
+
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.darkmode{
+    background-color: black;
+    padding: 8px 28px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.lightmode{
+    background-color: white;
+    padding: 8px 28px;
+    color: black;
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.img1{
+    width: 21%;
+    padding: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .img1{
+        width: 65%;
+        display: block;
+        margin-left: 50px;
+    }
+   
+}
+
+
+#main{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hidetodo, .showtodo, .add{
+   color: white;
+   background-color: rgb(2, 63, 133);
+   padding: 10px;
+   border: none;
+}
+
+#todoinput{
+    padding: 6px;
+    font-size: 15px;
+}
+
+li{
+    color: black;
+    background-color: white;
+    margin: 4px;
+    list-style: none;
+    padding-left: 4px;
+    padding-top: 4px;
+    text-align: left;
+     
+}
+
+.list{
+   position: relative;
+   left: 33%;
+   width: 38%;
+   border-radius: 1px;
+   font-size: 18px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  
+   
+}
+
+
+@media  screen and (max-width: 786px) {
+    .list{
+        position: relative;
+        left: 26%;
+        width: 30%;
+        font-size: 20px;
+     }
+     li{
+        margin: 2px;
+        padding: 4px;
+    }
+    .btn{
+       display: inline;
+       margin: 20px;
+    }
+
+}
+
+.btn{
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 1px;
+    margin: 4px;
+    padding: 6px;
+    width: 45%;
+    font-size: 16px;
+ 
+}
+
+

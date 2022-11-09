@@ -7,6 +7,7 @@
     <title>JavaScript</title>
 
     <link href="../assets/style.css" rel="stylesheet" />
+    <link href="../assets/todo.css" rel="stylesheet" />
 </head>
 <body>
     
@@ -17,18 +18,17 @@
 
     <!-- <div id="examples"></div> -->
 
-    <!-- <h2>TODOS</h2>
-    <div id="main">
-        <button onclick="hidetodolist()">Hide Todos</button>
-        <button onclick="showtodolist()">Show Todos</button>
-
-        <ol style="display:none; ">
-            <h3>Lists</h3>
-            
+    
+    <!-- <div id="main">
+        <button onclick="hidetodolist()" class="hide">Hide Todos</button>
+        <button onclick="showtodolist()" class="show">Show Todos</button>
+        <br>
+        <ol class="list">
+             
         </ol>
-
+        <br>
         <input type="text" id="todoinput" required>
-        <button onclick="alldata()">Add Todo</button>
+        <button class="add" onclick="alldata()">Add Todo</button>
 
        
 

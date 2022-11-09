@@ -158,7 +158,7 @@
 // console.log(first_name.match('i'));
 
 
-//NUMBER METHODS -----------
+//NUMBER METHODS --------------------
 
 // let a = 10;
 // let b = "1";
@@ -173,10 +173,9 @@
 // console.log(parseFloat(b))
 
 
+//ARRAY METHODS-------------------------
 
-//ARRAY METHODS
-
-//Type check
+//Type check---------
 // let fruits = ["mango","apple","grapes","watermelon","lemon"];
 // console.log(fruits)
 // console.log(Array.isArray(fruits))  
@@ -261,7 +260,7 @@
 // }
 
 
-//CLONING OF ARRAY
+//CLONING OF ARRAY -------------------
 
 //First way ----------
 // let arr1 = [1,2,3,4,5]; 
@@ -322,30 +321,321 @@
 //Types of Functions----------
 
 //1. Regular function (Named function)-----------
-function printName(){
-    console.log("Pranali Chatap");
-}
-printName();
+// function printName(){
+//     console.log("Pranali Chatap");
+// }
+// printName();
 
 
 //2. Expressive function (Anonymous function)-----------
-let name = function(){
-    console.log("Pranali");
-}
-name();
+// let name = function(){
+//     console.log("Pranali");
+// }
+// name();
 
 //3. Arrow Function (Added ES6 feature)-----------
-const fullname = () =>{
-    console.log("Pranali Prabhakar Chatap");
-}
-fullname();
+// const fullname = () =>{
+//     console.log("Pranali Prabhakar Chatap");
+// }
+// fullname();
 
 //4. Immediatetly Invoked Function -------------
 // function that runs as soon as it is defined
 
-(function(){
-    console.log("Immediatetly invoked function")
-}());
+// (function(){
+//     console.log("Immediatetly invoked function")
+// }());
+
+
+//Function With Parameters And Return Keyword   ------------------------
+
+//Regular function---------
+// function name(a){
+//     return a;
+// }
+// console.log(name("Pranali"));
+
+//Expressive function----------
+// let name = function(a){
+//     return a;
+// }
+// console.log(name("Pranali"));
+
+//Arrow function-----------
+// let name = (a,b) => {
+//     return `${a} ${b}`;
+// }
+// console.log(name("Pranali", "Chatap"));
+
+//We can make it short also ----------
+
+// let name = a => return a;
+// console.log(name("Pranali"));
+
+//Return true or false using arrow function------------
+// const greaterage = age => {
+//      return age>50
+// } 
+// console.log(greaterage(45));
+// console.log(greaterage(65));
+
+
+//CONDITIONAL STATEMENT or DECISION MAKING STATEMENT--------------------
+
+
+//if  ----- ( executes a block statement based on some condition)
+
+// let x = 10;
+// if(x == 13){
+//     console.log("x is equal to 10");
+// }
+
+
+// if else ----- (if statement become false then else part is executes)
+
+// let x = 10;
+// if(x == 13){
+//     console.log("x is equal to 13");
+// }
+// else{
+//     console.log("x is not equal to 13");
+// }
+
+
+// if else if ----- (if block become false then executes else if block)
+
+// let x = 15;
+// if(x == 13){
+//     console.log("x is equal to 13");
+// }
+// else if(x <= 13){
+//     console.log("x is less than equal to 13");
+// }
+// else{
+//     console.log("x is not equal to 13 ");
+// }
+
+
+//switch case ------ (when needs to make choice between different number of cases  )
+
+// let choice = 6;
+// switch(choice){
+//     case 1:
+//         console.log("choice 1");
+//         break;
+//     case 2:
+//         console.log("choice 2");
+//         break;
+//     case 3:
+//         console.log("choice 3");
+//         break;
+//     case 4:
+//         console.log("choice 4");
+//         break;  
+//     default:
+//         console.log("Wrong choice");
+//         break;
+// }
+
+
+//LOOPS ---------------------------
+//it means repeating itself
+//Types of loops are for, while, do while
+
+
+//For loop ----- (iterating over a sequence based on condition)
+//Types of for loop ----------------
+
+
+//1. Simple for loop ---------------
+
+// for(let i=0; i<=5 ; i++){
+//     console.log(i);
+// }
+
+// let fruits = ["kiwi", "banana", "apple", "mango"];
+// for(let i=0; i<=fruits.length ; i++){
+//     console.log(fruits[i]);
+// }
+
+
+//2. for of loop  (gives values) ---------------
+
+// let arr = [1,3,4,5];
+// for(let i of arr){
+//     console.log(i);
+// }
+
+// let fruits = ["kiwi", "banana", "apple", "mango"];
+// for(let fruit of fruits){
+//     console.log(fruit);
+// }
+
+
+//3. for in loop  (gives indexes) ----------------
+// let arr = [1,3,4,5];
+// for(let i in arr){
+//     console.log(i);
+// }
+
+// let fruits = ["kiwi", "banana", "apple", "mango"];
+// for(let fruit in fruits){
+//     console.log(fruit);
+// }
+
+
+//gives values and indexes
+// let fruits = ["kiwi", "banana", "apple", "mango"];
+// for(let fruit in fruits){
+//     console.log(fruits[fruit]);
+// }
+
+
+//4. forEach loop ----------------
+
+// let arr = [1,2,3,4,5];
+// arr.forEach(element => {
+//     console.log(element);
+// });
+
+// let fruits = ["kiwi", "banana", "apple", "mango"];
+// fruits.forEach( fruit => {
+//     console.log(fruit);
+// })
+
+
+// let fruits = ["mango","apple","grapes","watermelon","lemon"];
+// fruits.forEach(item => {
+//     if(item == "apple"){
+//         console.log(item);
+//     }
+// })
+
+// let arr = [1,2,3,4,5,6,7,8];
+// arr.forEach(num => {
+//     if(num%2 == 0){
+//         console.log(num);
+//     }
+// })
+
+
+
+//While Loop ---------------------
+//iterating over a sequence until the condition is met
+
+// let i=0;
+// while(i<10){
+//     console.log("Pranali");
+//     i++;
+// }
+
+
+
+//Do While Loop -------------------------
+//block executes at least once and then repeatedly executes
+// or stop based condition specified at the end
+
+// let i = 0;
+// do{
+//     console.log("Pranali");
+//     i++;
+// }while(i<10);
+
+
+
+//FUNCTION AS PARAMETER--------------------
+//function is passed as parameter in another function 
+
+//Regular function
+// function callmyname(){
+//     console.log("sonali","pranita", "pranali");
+// }
+
+// function printmyname(callname){
+//     callname();
+// }
+// printmyname(callmyname);
+
+
+//Expressive function
+// let callmyname = function(){
+//     console.log("sonali","pranita", "pranali");
+// }
+
+// let printmyname = function(callname){
+//     callname();
+// }
+// printmyname(callmyname);
+
+
+//Arrow function
+// let callmyname = () =>{
+//     console.log("sonali","pranita", "pranali");
+// }
+
+// let printmyname = callname => {
+//     callname();
+// }
+// printmyname(callmyname);
+
+
+
+//Directly passing function as parameter -------------------
+
+
+// regular function ----------
+// let printmyname = callname => {
+//     callname();
+// }
+// printmyname(function callmyname(){
+//     console.log("sonali","pranita", "pranali");
+// });
+
+
+//arrow function ----------
+// let printmyname = callname => {
+//     callname();
+// }
+// printmyname(() =>{
+//     console.log("sonali","pranita", "pranali");
+// });
+
+
+//anonymous function -----------
+// let printmyname = callname => {
+//     callname();
+// }
+// printmyname(function(){
+//     console.log("sonali","pranita", "pranali");
+// });
+
+
+
+// CALLBACK FUNCTION -----------------------
+//function which is passed as arguments in another function 
+
+// function myfunction1(callback){
+//     callback();
+    
+// }
+// myfunction1(myfunction2);
+
+// function myfunction2(){
+//     console.log(`my name is pranali and age is 23`);
+// }
+
+
+//HOISTING ------------------------
+
+// console.log(a)
+// let a=10;
+
+
+
+
+
+
+
 
 
 
